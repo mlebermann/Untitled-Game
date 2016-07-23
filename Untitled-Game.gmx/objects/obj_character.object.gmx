@@ -34,7 +34,7 @@ player_x=0;
 player_y=0;
 xv=0;
 yv=0;
-xv_multi=2;
+xv_multi=4;
 yv_multi=0;
 
 </string>
@@ -64,7 +64,7 @@ right=keyboard_check(vk_right);
 left=keyboard_check(vk_left);
 
 //control velocity
-xv=(xv+xv_multi*(right-left))*.7;
+xv=(xv+xv_multi*(right-left))*.55;
 yv=yv-yv_multi;
 
 //move player
